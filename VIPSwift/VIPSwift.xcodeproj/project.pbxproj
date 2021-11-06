@@ -13,6 +13,11 @@
 		75DA78A32736D5DE004EDC83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DA78A12736D5DE004EDC83 /* Main.storyboard */; };
 		75DA78A52736D5E3004EDC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DA78A42736D5E3004EDC83 /* Assets.xcassets */; };
 		75DA78A82736D5E3004EDC83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DA78A62736D5E3004EDC83 /* LaunchScreen.storyboard */; };
+		75DA78B52736D835004EDC83 /* ViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA78B42736D835004EDC83 /* ViewControllerModel.swift */; };
+		75DA78B72736D83D004EDC83 /* ViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA78B62736D83D004EDC83 /* ViewControllerInteractor.swift */; };
+		75DA78B92736D846004EDC83 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA78B82736D846004EDC83 /* ViewControllerPresenter.swift */; };
+		75DA78BB2736D84F004EDC83 /* ViewControllerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA78BA2736D84F004EDC83 /* ViewControllerRouter.swift */; };
+		75DA78BD2736DB54004EDC83 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA78BC2736DB54004EDC83 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		75DA78A42736D5E3004EDC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DA78A72736D5E3004EDC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75DA78A92736D5E3004EDC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DA78B42736D835004EDC83 /* ViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerModel.swift; sourceTree = "<group>"; };
+		75DA78B62736D83D004EDC83 /* ViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInteractor.swift; sourceTree = "<group>"; };
+		75DA78B82736D846004EDC83 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		75DA78BA2736D84F004EDC83 /* ViewControllerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRouter.swift; sourceTree = "<group>"; };
+		75DA78BC2736DB54004EDC83 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +96,11 @@
 		75DA78B12736D60B004EDC83 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				75DA789F2736D5DE004EDC83 /* ViewController.swift */,
+				75DA78B32736D825004EDC83 /* View */,
+				75DA78B42736D835004EDC83 /* ViewControllerModel.swift */,
+				75DA78B62736D83D004EDC83 /* ViewControllerInteractor.swift */,
+				75DA78B82736D846004EDC83 /* ViewControllerPresenter.swift */,
+				75DA78BA2736D84F004EDC83 /* ViewControllerRouter.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -97,6 +111,15 @@
 				75DA78A42736D5E3004EDC83 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		75DA78B32736D825004EDC83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DA789F2736D5DE004EDC83 /* ViewController.swift */,
+				75DA78BC2736DB54004EDC83 /* SecondViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DA78BD2736DB54004EDC83 /* SecondViewController.swift in Sources */,
+				75DA78B52736D835004EDC83 /* ViewControllerModel.swift in Sources */,
 				75DA78A02736D5DE004EDC83 /* ViewController.swift in Sources */,
+				75DA78B72736D83D004EDC83 /* ViewControllerInteractor.swift in Sources */,
+				75DA78B92736D846004EDC83 /* ViewControllerPresenter.swift in Sources */,
 				75DA789C2736D5DE004EDC83 /* AppDelegate.swift in Sources */,
+				75DA78BB2736D84F004EDC83 /* ViewControllerRouter.swift in Sources */,
 				75DA789E2736D5DE004EDC83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
